@@ -1,7 +1,6 @@
 # Notes
 
-## Schedule all nodes as available:
-
+## Schedule all master nodes as not available (we are not going to do that):
 function configInfraNodes() {
 
   for node_index in 0 1 2
