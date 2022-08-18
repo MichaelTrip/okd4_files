@@ -1,0 +1,24 @@
+$TTL    604800
+@       IN      SOA     okd4-services.okd.alcatrash.net. admin.okd.alcatrash.net. (
+                  6     ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800     ; Negative Cache TTL
+)
+
+; name servers - NS records
+    IN      NS      okd4-services.okd.alcatrash.net.
+
+; name servers - PTR records
+210    IN    PTR    okd4-services.okd.alcatrash.net.
+
+; OpenShift Container Platform Cluster - PTR records
+200    IN    PTR    okd4-bootstrap.okd.alcatrash.net.
+201    IN    PTR    okd4-control-plane-1.okd.alcatrash.net.
+202    IN    PTR    okd4-control-plane-2.okd.alcatrash.net.
+203    IN    PTR    okd4-control-plane-3.okd.alcatrash.net.
+204    IN    PTR    okd4-compute-1.okd.alcatrash.net.
+205    IN    PTR    okd4-compute-2.okd.alcatrash.net.
+210    IN    PTR    api.okd.alcatrash.net.
+210    IN    PTR    api-int.okd.alcatrash.net.
